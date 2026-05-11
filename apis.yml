@@ -1,0 +1,155 @@
+aid: redhat
+name: Red Hat
+description: >-
+  Red Hat is an IBM subsidiary providing enterprise open source software
+  including Red Hat Enterprise Linux, OpenShift, and Ansible Automation
+  Platform, with cloud services managed through the Red Hat Hybrid Cloud
+  Console. The Hybrid Cloud Console exposes REST APIs for subscription
+  management, system inventory, vulnerability and patch management,
+  notifications, RBAC, and other cloud services across hybrid environments.
+  APIs use token-based authentication via service accounts (OAuth 2.0 /
+  OIDC) following Red Hat's transition away from basic authentication.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Red Hat
+  - Hybrid Cloud
+  - Subscription Management
+  - Enterprise Linux
+  - OpenShift
+  - Cloud Services
+  - IBM
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/redhat/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: redhat:hybrid-cloud-console
+    name: Red Hat Hybrid Cloud Console API
+    description: >-
+      REST API surface for the Red Hat Hybrid Cloud Console at
+      console.redhat.com providing access to inventory, insights, patch,
+      vulnerability, notifications, RBAC, sources, and other cloud services.
+      Uses token-based authentication via service accounts (OAuth 2.0).
+    humanURL: https://console.redhat.com/docs/api
+    baseURL: https://console.redhat.com/api
+    tags:
+      - Hybrid Cloud
+      - Cloud Services
+      - Inventory
+      - Insights
+      - RBAC
+      - Notifications
+    properties:
+      - type: Documentation
+        url: https://console.redhat.com/docs/api
+      - type: Getting Started
+        url: https://docs.redhat.com/en/documentation/red_hat_hybrid_cloud_console/1-latest/html-single/getting_started_with_the_red_hat_hybrid_cloud_console/index
+      - type: Authentication
+        url: https://access.redhat.com/articles/7036194
+  - aid: redhat:subscription-management
+    name: Red Hat Subscription Management API
+    description: >-
+      REST API for managing Red Hat subscriptions, allocations, manifests,
+      and usage reporting via Subscription Services in the Hybrid Cloud
+      Console. Uses OAuth 2.0 / OIDC-compatible service account tokens.
+    humanURL: https://docs.redhat.com/en/documentation/subscription_central/1-latest/html-single/using_apis_in_red_hat_subscription_management/index
+    baseURL: https://console.redhat.com/api/rhsm/v2
+    tags:
+      - Subscription Management
+      - Entitlements
+      - Allocations
+      - Manifests
+    properties:
+      - type: Documentation
+        url: https://docs.redhat.com/en/documentation/subscription_central/1-latest/html-single/using_apis_in_red_hat_subscription_management/index
+      - type: Getting Started
+        url: https://access.redhat.com/articles/3626371
+
+common:
+  - type: Website
+    url: https://www.redhat.com
+  - type: Documentation
+    url: https://docs.redhat.com
+  - type: API Documentation
+    url: https://console.redhat.com/docs/api
+  - type: Customer Portal
+    url: https://access.redhat.com
+  - type: Hybrid Cloud Console
+    url: https://console.redhat.com
+  - type: Pricing
+    url: https://www.redhat.com/en/store
+  - type: Sign Up
+    url: https://www.redhat.com/wapps/ugc/register.html
+  - type: Support
+    url: https://access.redhat.com/support
+  - type: GitHub Organization
+    url: https://github.com/RedHatOfficial
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/red-hat
+features:
+  - name: Subscription Management
+    description: >-
+      Manage Red Hat product subscriptions, allocations, manifests, and
+      historical usage reporting across hybrid environments.
+  - name: System Inventory
+    description: >-
+      Query and manage registered Red Hat Enterprise Linux and OpenShift
+      systems across on-premise, cloud, and edge environments.
+  - name: Insights and Advisor
+    description: >-
+      Programmatic access to Red Hat Insights analytics, recommendations,
+      and remediations for RHEL fleets.
+  - name: Vulnerability and Patch
+    description: >-
+      Track CVE exposure and patch compliance across the Red Hat fleet
+      via the Hybrid Cloud Console APIs.
+  - name: RBAC and Identity
+    description: >-
+      Manage roles, groups, principals, and permissions across the
+      Hybrid Cloud Console using the RBAC API.
+  - name: Notifications and Integrations
+    description: >-
+      Configure notification behaviors, endpoints, and integrations
+      with Slack, Microsoft Teams, ServiceNow, Splunk, and webhooks.
+solutions:
+  - name: Enterprise Linux Operations
+    description: >-
+      Automate registration, patching, and lifecycle management of
+      Red Hat Enterprise Linux systems via Hybrid Cloud Console APIs.
+  - name: OpenShift Fleet Management
+    description: >-
+      Monitor and manage OpenShift clusters, costs, and subscriptions
+      from a centralized control plane via APIs.
+  - name: Subscription Cost Optimization
+    description: >-
+      Pull subscription, entitlement, and usage data to optimize
+      committed spend and consumption across hybrid environments.
+useCases:
+  - name: CMDB Synchronization
+    description: >-
+      Sync Red Hat system inventory and subscription state into an
+      external CMDB via inventory and subscription management APIs.
+  - name: Vulnerability Reporting
+    description: >-
+      Programmatically extract CVE exposure and remediation status
+      across a Red Hat estate for security reporting.
+  - name: Automated Subscription Provisioning
+    description: >-
+      Provision and deprovision subscriptions, manifests, and
+      allocations from CI/CD or provisioning workflows.
+integrations:
+  - name: ServiceNow
+    description: Notification and incident integration with ServiceNow
+  - name: Slack
+    description: Hybrid Cloud Console notification routing to Slack
+  - name: Microsoft Teams
+    description: Notification routing to Microsoft Teams
+  - name: Splunk
+    description: Stream Hybrid Cloud Console events to Splunk
+  - name: Webhooks
+    description: Generic webhook delivery for Console notifications
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
