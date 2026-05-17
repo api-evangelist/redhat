@@ -44,7 +44,7 @@ apis:
     properties:
       - type: Documentation
         url: https://console.redhat.com/docs/api
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.redhat.com/en/documentation/red_hat_hybrid_cloud_console/1-latest/html-single/getting_started_with_the_red_hat_hybrid_cloud_console/index
       - type: Authentication
         url: https://access.redhat.com/articles/7036194
@@ -64,7 +64,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.redhat.com/en/documentation/subscription_central/1-latest/html-single/using_apis_in_red_hat_subscription_management/index
-      - type: Getting Started
+      - type: GettingStarted
         url: https://access.redhat.com/articles/3626371
 
 common:
@@ -80,11 +80,11 @@ common:
     url: https://console.redhat.com
   - type: Pricing
     url: https://www.redhat.com/en/store
-  - type: Sign Up
+  - type: SignUp
     url: https://www.redhat.com/wapps/ugc/register.html
   - type: Support
     url: https://access.redhat.com/support
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/RedHatOfficial
   - type: LinkedIn
     url: https://www.linkedin.com/company/red-hat
