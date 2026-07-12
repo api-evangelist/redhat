@@ -68,6 +68,10 @@ apis:
         url: https://access.redhat.com/articles/3626371
 
 common:
+  - type: VulnerabilityDisclosure
+    url: security/redhat-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/redhat-domain-security.yml
   - type: Website
     url: https://www.redhat.com
   - type: Documentation
@@ -88,6 +92,8 @@ common:
     url: https://github.com/RedHatOfficial
   - type: LinkedIn
     url: https://www.linkedin.com/company/red-hat
+  - url: https://www.redhat.com/en/blog/rss.xml
+    type: Blog
 features:
   - name: Subscription Management
     description: >-
